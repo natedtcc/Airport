@@ -21,10 +21,10 @@ public class AirportSimulation {
 		// Commnent/uncomment as needed for testing
 		
 		// Flights only in runway1
-		//testCase1();
+		testCase1();
 
 		// Flights only in runway1
-		//testCase2();
+		testCase2();
 	
 		// Flights in both runways test 1
 		//testCase3();
@@ -35,17 +35,17 @@ public class AirportSimulation {
 		// TODO: Change the following code, so that each runway alternates if there are planes waiting on both runways
 		runwayStatus();
 
-		while (!runway1.isEmpty()) {
-			System.out.println("Dequeueing from runway 1...");
-			runway1.dequeue();
-			runwayStatus();
-		}
-
-		while (!runway2.isEmpty()) {
-			System.out.println("Dequeueing from runway 2...");
-			runway2.dequeue();
-			runwayStatus();
-		}
+//		while (!runway1.isEmpty()) {
+//			System.out.println("Dequeueing from runway 1...");
+//			runway1.dequeue();
+//			runwayStatus();
+//		}
+//
+//		while (!runway2.isEmpty()) {
+//			System.out.println("Dequeueing from runway 2...");
+//			runway2.dequeue();
+//			runwayStatus();
+//		}
 		
 		// TODO: Extra credit - change the code so that runway 1 has priority and can send two flights at a time
 
@@ -54,8 +54,8 @@ public class AirportSimulation {
 	public static void runwayStatus() {
 		System.out.println("\n\n------------------------------------------------");
 		System.out.println("---- Current runway status ---------------------");
-		System.out.println("Runway 1: " + runway1);
-		System.out.println("Runway 2: " + runway2);
+		System.out.println("Runway 1: \n" + runway1);
+		System.out.println("Runway 2: \n" + runway2);
 		System.out.println("------------------------------------------------");
 	}
 	
