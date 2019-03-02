@@ -29,31 +29,47 @@ public class LinkedQueue<T> implements QueueInterface<T> {
 		// TODO Implement dequeue
 		// Now we have to be careful to make sure we think of the various scenarios
 		// and update the prev and next links accordingly
-		if (front==null){ System.out.println("Underflow!");}
-		Node n = front.getNext();
-		if(n != null){ n.setPrev(null);}
-		if(n == null) back = null;
-		front = n;
-		return null;
+		T t = front.data;
+		if (front.getNext() != null) {
+			front = front.next;
+			return t;
+		}
+		else {
+			System.out.println("No elements found!");
+			back = null;
+			front.setData(null);
+			return null;
+		}
+
 	}
 
 	public T getFront() {
 		// TODO Implement getFront
-		
-		return null;
+		if (front != null){ return front.data; }
+		else return null;
+
 	}
 
 	public boolean isEmpty() {
 		// TODO Implement isEmpty
-		
-		return false;
+		return front == null;
 	}
 	
 	@Override
 	public String toString() {
-		// TODO Implement toString method
-		
-		return "";
+		String s = "";
+		Node n = front;
+		while(n != null) {
+			if (n.data != null){
+				s += n.data + "\n";
+				n = n.next;
+			}
+			else{
+				s += "Empty Container\n";
+				n = n.next;
+			}
+		}
+		return s;
 	}
 	
 	// Nested class Node

@@ -36,13 +36,13 @@ public class QueueTestDriver {
 		System.out.println(myIntegerQueue);
 		
 		for (int i = 0; i < testSet.length; i++) {
-			System.out.println("Dequeue " + myIntegerQueue.getFront());
+			System.out.println("Dequeue \n" + myIntegerQueue.getFront());
 			myIntegerQueue.dequeue();
 			System.out.println(myIntegerQueue);
 		}
 		
 		//What happens if we try to dequeue from an empty queue?
-		System.out.println("Dequeue " + myIntegerQueue.getFront());
+		System.out.println("Dequeue \n" + myIntegerQueue.getFront());
 		myIntegerQueue.dequeue();
 		System.out.println(myIntegerQueue);
 	}
@@ -60,13 +60,13 @@ public class QueueTestDriver {
 		System.out.println(myStringQueue);
 		
 		for (int i = 0; i < testSet.length; i++) {
-			System.out.println("Dequeue " + myStringQueue.getFront());
+			System.out.println("Dequeue \n" + myStringQueue.getFront());
 			myStringQueue.dequeue();
 			System.out.println(myStringQueue);
 		}
 		
 		//What happens if we try to dequeue from an empty queue?
-		System.out.println("Dequeue " + myStringQueue.getFront());
+		System.out.println("Dequeue \n" + myStringQueue.getFront());
 		myStringQueue.dequeue();
 		System.out.println(myStringQueue);
 	}
@@ -90,13 +90,13 @@ public class QueueTestDriver {
 		System.out.println(myStringQueue);
 		
 		for (int i = 0; i < testSet.length; i++) {
-			System.out.println("Dequeue " + myStringQueue.getFront());
+			System.out.println("Dequeue \n" + myStringQueue.getFront());
 			myStringQueue.dequeue();
 			System.out.println(myStringQueue);
 		}
 		
 		//What happens if we try to dequeue from an empty queue?
-		System.out.println("Dequeue " + myStringQueue.getFront());
+		System.out.println("Dequeue \n" + myStringQueue.getFront());
 		myStringQueue.dequeue();
 		System.out.println(myStringQueue);
 		
