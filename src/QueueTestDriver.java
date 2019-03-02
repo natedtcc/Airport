@@ -2,7 +2,7 @@
  * @author Delaware Technical Community College
  * An application showing examples of how the queue ADT works
  * 
- * @param <T>
+ *
  */
 public class QueueTestDriver {
 
@@ -27,8 +27,8 @@ public class QueueTestDriver {
 		System.out.println("\n\nTesting with some integers");
 
 		LinkedQueue<Integer> myIntegerQueue = new LinkedQueue<>();
-		
-		int testSet[] = {1,2,3,4,5};
+
+		int[] testSet = {1, 2, 3, 4, 5};
 		
 		for (int i = 0; i < testSet.length; i++) {
 			myIntegerQueue.enqueue(testSet[i]);
@@ -51,8 +51,8 @@ public class QueueTestDriver {
 		System.out.println("\n\nTesting with some strings");
 		
 		LinkedQueue<String> myStringQueue = new LinkedQueue<>();
-		
-		String testSet[] = {"Hello", "World", "How", "You", "Doing", "Today?"};
+
+		String[] testSet = {"Hello", "World", "How", "You", "Doing", "Today?"};
 		
 		for (int i = 0; i < testSet.length; i++) {
 			myStringQueue.enqueue(testSet[i]);
@@ -81,8 +81,8 @@ public class QueueTestDriver {
 		Airplane plane2 = new Airplane("DL", 1345);
 		Airplane plane3 = new Airplane("AA", 4531);
 		Airplane plane4 = new Airplane("DL", 9873);
-		
-		Airplane testSet[] = {plane1, plane2, plane3, plane4};
+
+		Airplane[] testSet = {plane1, plane2, plane3, plane4};
 		
 		for (int i = 0; i < testSet.length; i++) {
 			myStringQueue.enqueue(testSet[i]);

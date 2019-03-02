@@ -1,8 +1,10 @@
 
-/**
- * @author Delaware Technical Community College
- * Starter code for Assignment 6
+/*
+ *   Nathan Nasteff
+ *   Delaware Tech
+ *   Spring 2019
  */
+
 public class AirportSimulation {
 	static LinkedQueue<Airplane> runway1 = new LinkedQueue<>();
 	static LinkedQueue<Airplane> runway2 = new LinkedQueue<>();

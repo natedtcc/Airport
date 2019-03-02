@@ -1,8 +1,10 @@
-/**
- * @author Delaware Technical Community College
- * A simple implementation of the Queue ADT using a nested Node class and a doubly linked list
- * @param <T>
+
+/*
+ *   Nathan Nasteff
+ *   Delaware Tech
+ *   Spring 2019
  */
+
 
 public class LinkedQueue<T> implements QueueInterface<T> {
 	Node front;
