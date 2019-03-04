@@ -5,7 +5,6 @@
  *   Spring 2019
  */
 
-
 public class LinkedQueue<T> implements QueueInterface<T> {
 	Node front;
 	Node back;
@@ -28,32 +27,22 @@ public class LinkedQueue<T> implements QueueInterface<T> {
 	}
 
 	public T dequeue() {
-		// TODO Implement dequeue
-		// Now we have to be careful to make sure we think of the various scenarios
-		// and update the prev and next links accordingly
-		T t = front.data;
-		if (front.getNext() != null) {
-			front = front.next;
-			return t;
-		}
+		if (!isEmpty()) { front = front.next; }
 		else {
-			System.out.println("No elements found!");
 			back = null;
-			front.setData(null);
-			return null;
-		}
-
+			}
+		return null;
 	}
 
 	public T getFront() {
-		// TODO Implement getFront
 		if (front != null){ return front.data; }
 		else return null;
 
 	}
 
+	// Returns true if front == null, false otherwise
+
 	public boolean isEmpty() {
-		// TODO Implement isEmpty
 		return front == null;
 	}
 	
